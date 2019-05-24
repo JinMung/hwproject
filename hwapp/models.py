@@ -11,7 +11,7 @@ class Twice(models.Model):
     age = models.IntegerField()
     birth = models.DateTimeField('date published') 
     nationality = models.CharField(max_length=200, choices=Nationality_Choice)
-    position = models.TextField()
+    position = models.TextField(max_length=20)
 
     def __str__(self):
         return self.name
